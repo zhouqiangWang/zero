@@ -1,4 +1,4 @@
-package com.zhouq.zero;
+package com.zhouq.zero.activity;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+import com.zhouq.zero.R;
 
 public class MainActivity extends AppCompatActivity {
 

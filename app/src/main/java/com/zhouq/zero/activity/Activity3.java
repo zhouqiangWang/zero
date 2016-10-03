@@ -1,4 +1,4 @@
-package com.zhouq.zero;
+package com.zhouq.zero.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,13 +6,18 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
+import com.zhouq.zero.R;
 
-public class Activity2 extends AppCompatActivity {
+public class Activity3 extends AppCompatActivity {
+
+  private static final String TAG = Activity3.class.getSimpleName()+"-wang";
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_2);
+    Log.d(TAG, "onCreate: "+savedInstanceState);
+    setContentView(R.layout.activity_3);
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
@@ -45,5 +50,40 @@ public class Activity2 extends AppCompatActivity {
         startActivity(intent);
       }
     });
+  }
+
+  @Override protected void onNewIntent(Intent intent) {
+    Log.d(TAG, "onNewIntent: "+intent);
+    super.onNewIntent(intent);
+  }
+
+  @Override protected void onRestart() {
+    Log.d(TAG, "onRestart: ");
+    super.onRestart();
+  }
+
+  @Override protected void onStart() {
+    Log.d(TAG, "onStart: ");
+    super.onStart();
+  }
+
+  @Override protected void onResume() {
+    Log.d(TAG, "onResume: ");
+    super.onResume();
+  }
+
+  @Override protected void onPause() {
+    Log.d(TAG, "onPause: ");
+    super.onPause();
+  }
+
+  @Override protected void onStop() {
+    Log.d(TAG, "onStop: ");
+    super.onStop();
+  }
+
+  @Override protected void onDestroy() {
+    Log.d(TAG, "onDestroy: ");
+    super.onDestroy();
   }
 }

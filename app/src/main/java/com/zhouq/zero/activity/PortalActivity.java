@@ -1,6 +1,5 @@
-package com.zhouq.zero;
+package com.zhouq.zero.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,6 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import com.zhouq.zero.R;
+import com.zhouq.zero.utility.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +27,7 @@ public class PortalActivity extends AppCompatActivity implements NavigationView.
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    Utils.isDebug(getApplicationContext());
     setContentView(R.layout.activity_portal);
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
@@ -50,6 +52,7 @@ public class PortalActivity extends AppCompatActivity implements NavigationView.
     activities.add(DownloaderActivity.class);
     activities.add(MainActivity.class);
     activities.add(StacksActivity.class);
+    activities.add(RecyclerActivity.class);
 
     NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
     Menu navMenu = navigationView.getMenu();

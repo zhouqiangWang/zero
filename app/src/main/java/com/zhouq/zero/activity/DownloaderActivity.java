@@ -1,7 +1,5 @@
-package com.zhouq.zero;
+package com.zhouq.zero.activity;
 
-import android.content.ComponentName;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,10 +9,9 @@ import android.widget.ProgressBar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.zhouq.zero.R;
 import com.zhouq.zero.utility.DownloadApi;
-import okhttp3.ResponseBody;
 import retrofit2.Retrofit;
-import rx.Subscriber;
 
 public class DownloaderActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.zhouq.zero;
+package com.zhouq.zero.activity;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import com.zhouq.zero.R;
 import com.zhouq.zero.fragment.AsyncFragment;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

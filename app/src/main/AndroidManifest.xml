@@ -11,17 +11,17 @@
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
     <activity
-        android:name=".MainActivity"
+        android:name=".activity.MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       >
     </activity>
     <activity
-        android:name=".AsyncTestActivity"
+        android:name=".activity.AsyncTestActivity"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
     </activity>
     <activity
-        android:name=".PortalActivity"
+        android:name=".activity.PortalActivity"
         android:label="@string/title_activity_portal"
         android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
@@ -31,25 +31,30 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".DownloaderActivity"
+        android:name=".activity.DownloaderActivity"
         android:label="@string/title_activity_downloader"
         android:theme="@style/AppTheme.NoActionBar">
     </activity>
     <activity
-        android:name=".StacksActivity"
+        android:name=".activity.StacksActivity"
         android:label="@string/title_activity_stacks"
         android:theme="@style/AppTheme.NoActionBar">
     </activity>
     <activity
-        android:name=".Activity2"
+        android:name=".activity.Activity2"
         android:label="@string/title_activity_2"
-        android:launchMode="singleInstance"
+        android:launchMode="singleTop"
         android:theme="@style/AppTheme.NoActionBar">
     </activity>
     <activity
-        android:name=".Activity3"
+        android:name=".activity.Activity3"
         android:label="@string/title_activity_3"
-        android:launchMode="singleInstance"
+        android:launchMode="singleTask"
+        android:theme="@style/AppTheme.NoActionBar">
+    </activity>
+    <activity
+        android:name=".activity.RecyclerActivity"
+        android:label="@string/title_activity_recycler"
         android:theme="@style/AppTheme.NoActionBar">
     </activity>
   </application>

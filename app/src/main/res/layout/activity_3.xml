@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.zhouq.zero.Activity3"
+    tools:context="com.zhouq.zero.activity.Activity3"
     >
 
   <android.support.design.widget.AppBarLayout
