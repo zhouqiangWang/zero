@@ -1,6 +1,4 @@
 language: android
-jdk:
-  - openjdk8
 android:
   components:
   - build-tools-24.0.1
@@ -20,9 +18,7 @@ before_script:
 
 script:
 - bash ./gradlew assemble
-notifications:
-  email:
-  - zhouqiang.wang@hotmail.com
+
 deploy:
   provider: releases
   api_key:
