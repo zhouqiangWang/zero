@@ -1,0 +1,27 @@
+language: android
+android:
+  components:
+  - build-tools-24.0.1
+  - android-24
+  - sys-img-arm64-v8a-android-24
+  - extra-android-m2repository
+  - extra-android-support
+script:
+- bash ./gradlew :app:assembleRelease :app:assembleDebug
+notifications:
+  email:
+  - zhouqiang.wang@hotmail.com
+deploy:
+  provider: releases
+  api_key:
+    secure: ZM5M4RAmCgIP0UusodaKNnaiKWWdA5+6sySVMpzdczdbh+P31tZDMB+xwdggohS01psuVr69MTamcZ6xylZEL6i0Hc2XaDF6Ucvc96w4GYw7+awIaqAfG6tW3Fvb7Qe9MFK9HswF6UeBApO9rJXeOXdYTsnrd2GI1lzit1bauseXfOCf6fyItCZygNSJnrbP4SwJTBUn0DWP0MXxB+Hs5v+Iw/E4OCfx+3hEGLsk3X6VfEeOd5sGuL9LjxmHXkL8KFCMWkvlsDFeU/Dld4orewiS0ZdBpwvERIpkJ7fzThjvWjFCpL1pgnGhQ48Rz9EK4+pf4NO9XR2XMFGrc51DBESk3I7m9VNVI/5gvpnPRYSi4hGoQ9p2GjDRUZms8lBm6Us7dMV94A10SM/auXVCxrsd6ZRV79eQ3XpaHUjwj0GX70yz8pUsIFJ4AIMty1u+csEDX3vWjMsePbxzPx7CWlavdMqLZFtltK5lvCB2eKFt8ORk5IYq4hs1f217y4fuJytum1xW/YICi5MLKFQG4L2Adf95HpF/JdfHHmgq2+pSF+qNMAB3p66d2+IBLUQZ1/WrJ/9OnR+7X5TuHC/xHtcAIa4SXkqytseLY7cS9tJbT92523MUDyelzX9QOl9N3Sw2+l9FxwXbdcgfO5mvAgNTh0VxCF4wb+yFnirkCvo=
+  file:
+    - app/build/outputs/apk/app-release.apk
+    - app/build/outputs/apk/app-debug.apk
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: zhouqiangWang/zero
+before_install:
+- openssl aes-256-cbc -K $encrypted_3359fdb459b1_key -iv $encrypted_3359fdb459b1_iv
+  -in key_zhouq\(psw_1q2w3e\).jks.enc -out key_zhouq\(psw_1q2w3e\).jks -d
