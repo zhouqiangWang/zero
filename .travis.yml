@@ -7,7 +7,7 @@ android:
   - extra-android-m2repository
   - extra-android-support
 script:
-- bash ./gradlew :app:assembleRelease
+- bash ./gradlew :assembleRelease
 notifications:
   email:
   - zhouqiang.wang@hotmail.com
