@@ -7,5 +7,7 @@
 /build
 /captures
 
+# keystore config
 *.jks
+!key_zhouq(psw_1q2w3e).jks.enc
 gradle.properties
