@@ -6,8 +6,6 @@ android:
   - sys-img-arm64-v8a-android-24
   - extra-android-m2repository
   - extra-android-support
-script:
-- bash ./gradlew :app:assembleRelease :app:assembleDebug
 notifications:
   email:
   - zhouqiang.wang@hotmail.com
