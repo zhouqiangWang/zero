@@ -1,4 +1,8 @@
 language: android
+
+jdk:
+  - oraclejdk8
+
 android:
   components:
   - build-tools-24.0.1
@@ -8,7 +12,6 @@ android:
   - extra-android-support
   licenses:
     - android-sdk-license-c81a61d9
-    - google-gdk-license-.+
 
 before_script:
   - "android update sdk --no-ui --filter build-tools-24.0.1,android-24,extra-android-m2repository"
