@@ -4,6 +4,7 @@ jdk:
   - oraclejdk8
 
 android:
+  - { target: android-23, sdks: [android-23, sysimg-23], abi: armeabi-v7a}
   components:
   - build-tools-23.0.1
   - android-23
