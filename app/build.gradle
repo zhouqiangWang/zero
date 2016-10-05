@@ -15,7 +15,7 @@ android {
   signingConfigs{
     release{
       storeFile file("../key_zhouq(psw_1q2w3e).jks")
-      storePassword project.hasProperty("RELEASE_STORE_PASSWORD") ? RELEASE_STORE_PASSWORD : System.getenv("KEYSTORE_PASS")
+      storePassword project.hasProperty("RELEASE_STORE_PASSWORD") ? RELEASE_STORE_PASSWORD : System.getenv("RELEASE_STORE_PASSWORD")
       keyAlias project.hasProperty("RELEASE_KEY_ALIAS") ? RELEASE_KEY_ALIAS : System.getenv("RELEASE_KEY_ALIAS")
       keyPassword project.hasProperty("RELEASE_KEY_PASSWORD") ? RELEASE_KEY_PASSWORD : System.getenv("RELEASE_KEY_PASSWORD")
     }
