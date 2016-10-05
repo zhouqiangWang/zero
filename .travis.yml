@@ -5,16 +5,18 @@ jdk:
 
 android:
   components:
-  - build-tools-24.0.1
-  - android-24
+  - build-tools-23.0.1
+  - android-23
   - extra-android-m2repository
   - extra-android-support
   licenses:
     - android-sdk-license-c81a61d9
+     - android-sdk-license-.+
+     - google-gdk-license-.+
 
-#before_script:
-#  - "echo no | android -v create avd --force -n test -t android-24"
-#  - "emulator -avd test -no-skin -no-audio -no-window &"
+before_script:
+  - echo no | android -v create avd --force -n test -t android-23 --abi armeabi-v7a
+  - emulator -avd test -no-skin -no-audio -no-window &
 
 script:
 - bash ./gradlew assemble
