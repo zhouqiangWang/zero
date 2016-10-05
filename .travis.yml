@@ -10,9 +10,10 @@ android:
   - extra-android-m2repository
   - extra-android-support
   licenses:
+    - android-sdk-license-5be876d5
     - android-sdk-license-c81a61d9
-     - android-sdk-license-.+
-     - google-gdk-license-.+
+    - android-sdk-license-.+
+    - google-gdk-license-.+
 
 #before_script:
 #  - echo no | android -v create avd --force -n test -t android-23 --abi armeabi-v7a
