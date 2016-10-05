@@ -7,7 +7,7 @@ android:
   components:
   - build-tools-24.0.1
   - android-24
-  - sys-img-arm64-v8a-android-24
+  - sys-img-armeabi-v7a-android-24
   - extra-android-m2repository
   - extra-android-support
   licenses:
