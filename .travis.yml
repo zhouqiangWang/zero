@@ -12,9 +12,9 @@ android:
   licenses:
     - android-sdk-license-c81a61d9
 
-before_script:
-  - "echo no | android -v create avd --force -n test -t android-24"
-  - "emulator -avd test -no-skin -no-audio -no-window &"
+#before_script:
+#  - "echo no | android -v create avd --force -n test -t android-24"
+#  - "emulator -avd test -no-skin -no-audio -no-window &"
 
 script:
 - bash ./gradlew assemble
